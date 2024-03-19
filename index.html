@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table id = "allInstrument">
+	<tr><td class = "inst-row" onclick = "addInstrument()">Add Instrument</td><td class = "inst-row"></td></tr>
+</table>
+
+<div id = "roll">
+  <div id = "inforoll">
+    <p style = "width:100px;display:inline-block;">Instrument</p>
+    <button style = "float:right;" onclick = "document.getElementById('roll').style.display = 'none'; adjust();">X</button>
+    <br>
+    <select id = "synthwave" onchange = "showcustom(); adjust();">
+      <option value = "sine">sine</option>
+      <option value = "square">square</option>
+      <option value = "sawtooth">sawtooth</option>
+      <option value = "triangle">triangle</option>
+      <option value = "custom">custom</option>
+    </select>
+    <div id = "customwave">
+    <button onclick = "addvalue(); adjust();">+</button>
+    </div>
+    <br>
+    <label for = "atk" class = "adsrLabel">Atk</label>
+    <label for = "dec" class = "adsrLabel">Dec</label>
+    <label for = "sus" class = "adsrLabel">Sus</label>
+    <label for = "rel" class = "adsrLabel">Rel</label>
+    <br>
+    <input name = "atk" type = "range" min = 0 max = 1 value = 0.5 step = 0.01 class = "adsr" onchange = "adjust();">
+    <input name = "dec" type = "range" min = 0 max = 1 value = 0.5 step = 0.01 class = "adsr" onchange = "adjust();">
+    <input name = "sus"type = "range" min = 0 max = 1 value = 0.5 step = 0.01 class = "adsr" onchange = "adjust();">
+    <input name = "rel" type = "range" min = 0 max = 1 value = 0.5 step = 0.01 class = "adsr" onchange = "adjust();">
+    <br>
+  </div>
+</div>
+</body>
+<script src = "script.js"></script>
+</html>
