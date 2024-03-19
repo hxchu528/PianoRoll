@@ -1,5 +1,5 @@
 # PianoRoll
-A personal project to create a simple music-making webpage. It's somewhatlike FL Studio but online.
+A personal project to create a simple music-making webpage. It's somewhat like FL Studio but online.
 
 Todo:
 - Finish information about instruments
